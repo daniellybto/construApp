@@ -23,7 +23,6 @@ class CreateUsuariosTable extends Migration
             $table->unsignedBigInteger('id_cidade');
             $table->foreign('id_cidade')->references('id')->on('cidade');
 
-
             $table->string('primeiro_nome', 45);
             $table->string('sobrenome', 45);
             $table->string('apelido', 20);
